@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PXCQ6CJ');
+    </script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub E-commerce GTM - iPhone</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="../analytics.js"></script>
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PXCQ6CJ" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="container detail">
+        <div class="row">
+            <button id='home'><a href="../index.html">Home</a></button>
+        </div>
+        <div class="product">
+            <div class="product_detail iphone" id="iphone" data-sku="1929500" data-name="iPhone" data-price="599.00"
+                data-category="electronics" data-brand="Apple">
+                <h1>iPhone</h1>
+                <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-12-pro-family-hero?wid=940&amp;hei=1112&amp;fmt=jpeg&amp;qlt=80&amp;op_usm=0.5,0.5&amp;.v=1604021663000"
+                    alt="" srcset="" class="iphone">
+                <p>Price: $<span class="price">599.00</span></p>
+                <button onclick="analyticsAddToCart('iphone')">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    setTimeout(() => {
+        var product = document.getElementById('iphone').dataset
+
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+            event: 'gaEvent',
+            eventCategory: 'ecommerce',
+            eventAction: 'productDetail',
+            ecommerce: {
+                detail: {
+                    products: [{
+                        name: product.name,
+                        id: product.sku,
+                        price: product.price,
+                        category: product.category,
+                        brand: product.brand,
+                        quantity: 1
+                    }]
+                }
+            }
+        })
+    }, 1000);
+</script>
+
+
+</html>
