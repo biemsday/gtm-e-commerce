@@ -1,0 +1,42 @@
+html {
+    text-align: center;
+}
+
+.row {
+    height: auto;
+    text-align: center;
+    margin: 10px;
+}
+
+.product_row {
+    display: inline-block;
+    height: auto;
+    text-align: center;
+    margin: 10px;
+    display: block;
+}
+
+img {
+    height: 300px;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
+}
+
+img.iphone {
+    transform: scale(1);
+}
+
+img.iwatch,
+img.airpods {
+    transform: scale(0.4);
+}
+
+.product_card {
+    width: auto;
+    height: 300px;
+    padding: 25px;
+    display: inline-block;
+}
