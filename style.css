@@ -8,10 +8,10 @@ a {
     text-decoration: none;
 }
 
-#home{
-        position: absolute;
-        left: 50px;
-        top: 50px;
+#home {
+    position: absolute;
+    left: 50px;
+    top: 50px;
 }
 
 .row {
@@ -63,6 +63,14 @@ img.airpods {
     display: inline-block;
 }
 
-div.detail{
+div.detail {
     background: rgba(255, 255, 255, 1);
+}
+
+.red {
+    color: red;
+}
+
+.blue {
+    color: blue;
 }
